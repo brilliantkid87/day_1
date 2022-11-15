@@ -1,7 +1,40 @@
-body {
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+    background-color: #c2c2c2;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black
+}
+
+.btn-contact {
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
 }
 
 /* Card Section */
@@ -43,4 +76,19 @@ body {
 .card-content h3 {
     display: flex;
     justify-content: center;
+}
+
+/* Contact */
+.contact-section {
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+form h3 {
+    display: flex;
+    justify-content: center;
+}
+
+form div input, select, textarea {
+    width: 100%;
 }
